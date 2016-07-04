@@ -4,3 +4,9 @@ c:\users\anastasiya_kulakova\documents\visual studio 2015\Projects\Task4.4\Task4
 c:\users\anastasiya_kulakova\documents\visual studio 2015\Projects\Task4.4\Task4.4\obj\Debug\Task4.4.csprojResolveAssemblyReference.cache
 c:\users\anastasiya_kulakova\documents\visual studio 2015\Projects\Task4.4\Task4.4\obj\Debug\Task4.4.exe
 c:\users\anastasiya_kulakova\documents\visual studio 2015\Projects\Task4.4\Task4.4\obj\Debug\Task4.4.pdb
+C:\Task4\Task4.4\Task4.4\bin\Debug\Task4.4.exe.config
+C:\Task4\Task4.4\Task4.4\obj\Debug\Task4.4.exe
+C:\Task4\Task4.4\Task4.4\obj\Debug\Task4.4.pdb
+C:\Task4\Task4.4\Task4.4\bin\Debug\Task4.4.exe
+C:\Task4\Task4.4\Task4.4\bin\Debug\Task4.4.pdb
+C:\Task4\Task4.4\Task4.4\obj\Debug\Task4.4.csprojResolveAssemblyReference.cache
