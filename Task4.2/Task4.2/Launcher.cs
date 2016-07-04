@@ -28,7 +28,7 @@ namespace Task4._2
                         launcher.CalculationFactorial();
                         break;
                     default:
-                        Console.WriteLine("You enter don'y 1 or 2");
+                        Console.WriteLine("You enter don't 1 or 2");
                         break;
                 }
             }
@@ -37,8 +37,13 @@ namespace Task4._2
         public void CalculationFactorial()
         {
             Console.WriteLine("\n Please,enter number to factirial");
-            string number = Console.ReadLine();
-            long x = Int64.Parse(number);
+
+            long x;
+            while (!Int64.TryParse(Console.ReadLine(), out x))
+            {
+                Console.WriteLine("Please enter number again");
+            }
+
             long result = 1;
             for (long i = 1; i <= x; i++)
             {
@@ -51,7 +56,12 @@ namespace Task4._2
         public void CalculationFibonnachiNumbers()
         {
             Console.Write("Введите конец диапазона от 1 до : ");
-            long end = Int64.Parse(Console.ReadLine());
+            long end;
+            while (!Int64.TryParse(Console.ReadLine(), out end))
+            {
+                Console.WriteLine("Please enter number again");
+            }
+
             long j = 1;
             for (long i = 1; i <= end; i += j)
             {
@@ -61,47 +71,4 @@ namespace Task4._2
             Console.WriteLine("\n");
         }
     }
-
-
-
-    //class BigInteger {
-       
-    //     BigInteger FactFactor(int n)
-    //    {
-    //        if (n < 0)
-    //            return 0;
-    //        if (n == 0)
-    //            return 1;
-    //        if (n == 1 || n == 2)
-    //            return n;
-    //        bool[] u = new bool[n + 1]; // маркеры для решета Эратосфена
-    //        List<Tuple<int, int>> p = new List<Tuple<int, int>>(); // множители и их показатели степеней
-    //        for (int i = 2; i <= n; ++i)
-    //            if (!u[i]) // если i - очередное простое число
-    //            {
-    //                // считаем показатель степени в разложении
-    //                int k = n / i;
-    //                int c = 0;
-    //                while (k > 0)
-    //                {
-    //                    c += k;
-    //                    k /= i;
-    //                }
-    //                // запоминаем множитель и его показатель степени
-    //                p.Add(new Tuple<int, int>(i, c));
-    //                // просеиваем составные числа через решето               
-    //                int j = 2;
-    //                while (i * j <= n)
-    //                {
-    //                    u[i * j] = true;
-    //                    ++j;
-    //                }
-    //            }
-    //        // вычисляем факториал
-    //        BigInteger r = 1;
-    //        for (int i = p.Count() - 1; i >= 0; --i)
-    //            r *= BigInteger.Pow(p[i].Item1, p[i].Item2);
-    //        return r;
-    //    }
-    //}
 }
